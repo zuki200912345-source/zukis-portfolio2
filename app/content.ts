@@ -325,28 +325,4 @@ export const awards = [
     result: "First place",
     year: "",
   },
-  {
-    title: "Model United Nations",
-    organisation: "El Gouna",
-    result: "Best delegate",
-    year: "",
-  },
-  {
-    title: "Model United Nations",
-    organisation: "International School of Choueifat",
-    result: "Best delegate",
-    year: "",
-  },
-  {
-    title: "Model United Nations",
-    organisation: "British International School, Cairo",
-    result: "Honourable mention",
-    year: "",
-  },
-  {
-    title: "Model United Nations",
-    organisation: "Hayah International Academy",
-    result: "Honourable mention",
-    year: "",
-  },
 ];

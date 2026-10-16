@@ -33,7 +33,7 @@ const destinations = [
     number: "04",
     name: "Awards & honours",
     line: "A few milestones.",
-    detail: "Recognition in chemistry, physics, mathematics, STEM, and debate.",
+    detail: "Recognition in chemistry, physics, mathematics, and STEM.",
     count: `${awards.length} honours`,
   },
 ];

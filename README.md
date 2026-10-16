@@ -1,6 +1,17 @@
 # Zuki's Portfolio
 
-The personal portfolio of Abdallah “Zuki” El Dessouky, featuring selected education, AI, food-science, and product work.
+The personal website of Abdallah “Zuki” El Dessouky, built with Next.js App Router.
+
+## Pages
+
+- `/` — Introduction and chapter directory
+- `/education` — IB subjects and school activities
+- `/activities` — Filterable activity descriptions
+- `/research` — Research questions and approaches
+- `/awards` — Awards and honours
+- `/about` — Personal introduction
+
+The shared index and header navigate between pages. Earlier bookmarks such as `/#activities` forward to the corresponding page.
 
 ## Run locally
 
@@ -18,5 +29,4 @@ npm run build
 npm start
 ```
 
-This project is configured for deployment on Vercel.
-
+This repository is connected to Vercel. Content is maintained in `app/content.ts`. Shared navigation and interactive entries are in `app/portfolio-ui.tsx`; the decorative geometry and progressive motion are in `app/motion.tsx`. Animation respects reduced-motion preferences and can be paused from the index.

@@ -22,7 +22,7 @@ export default function Page() {
             <span className="tiny-cross" aria-hidden="true">
               +
             </span>
-            <p>My internships at Meta and KarmSolar.</p>
+            <p>My experience at Meta, KarmSolar, and Eatery.</p>
           </div>
         </div>
         <ActivityIndex entries={internships} label="internships" />

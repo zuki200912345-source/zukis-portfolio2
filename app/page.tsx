@@ -51,7 +51,7 @@ const destinations = [
     number: "06",
     name: "Internships",
     line: "Learning through work.",
-    detail: "Professional experience at Meta and KarmSolar.",
+    detail: "Professional experience at Meta, KarmSolar, and Eatery.",
     count: `${internships.length} internships`,
   },
   {

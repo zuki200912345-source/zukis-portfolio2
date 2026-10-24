@@ -1,7 +1,7 @@
 import { activities, schoolActivities, type Entry } from "./content";
 
 export const internships = activities.filter((entry) =>
-  ["meta", "karmsolar"].includes(entry.id),
+  ["meta", "karmsolar", "eatery"].includes(entry.id),
 );
 
 export const projects: Entry[] = [

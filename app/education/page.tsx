@@ -15,24 +15,14 @@ export default function Page() {
       >
         <Chapter number="01" label="Education" />
         <div className="section-heading">
-          <h1 id="education-title">
-            The starting
-            <br />
-            <em>point.</em>
-          </h1>
+          <h1 id="education-title">Education</h1>
           <div className="heading-note">
             <span className="tiny-cross" aria-hidden="true">
               +
             </span>
-            <p>
-              British International
-              <br />
-              School, Cairo
-            </p>
+            <p>British International School, Cairo</p>
             <p className="mono">
-              IB Diploma candidate
-              <br />
-              Expected graduation 2027
+              IB Diploma candidate · Expected graduation 2027
             </p>
           </div>
         </div>
@@ -57,11 +47,7 @@ export default function Page() {
         </div>
         <div className="school-heading">
           <p className="mono">Beyond my timetable</p>
-          <h2>
-            School is also
-            <br />
-            <em>what we make of it.</em>
-          </h2>
+          <h2>School activities & leadership</h2>
           <p>
             Organising a conference, bringing students into engineering, and
             making room for science beyond the syllabus.
@@ -69,7 +55,10 @@ export default function Page() {
         </div>
         <ActivityIndex entries={schoolActivities} variant="school" />
       </section>
-      <PageTurn previous={["/", "Home"]} next={["/activities", "Activities"]} />
+      <PageTurn
+        previous={["/projects", "Independent Projects"]}
+        next={["/activities", "Activities"]}
+      />
     </>
   );
 }

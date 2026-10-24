@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { Chapter, PageTurn } from "../site-shell";
 import { activities } from "../content";
@@ -15,41 +16,22 @@ export default function Page() {
       >
         <Chapter number="02" label="Activities" />
         <div className="section-heading">
-          <h1 id="activities-title">
-            Outside
-            <br />
-            <em>the lines.</em>
-          </h1>
+          <h1 id="activities-title">Activities</h1>
           <div className="heading-note">
-            <span className="tiny-cross" aria-hidden="true">
-              +
-            </span>
-            <p>
-              Things I build.
-              <br />
-              Places I learn.
-              <br />
-              Practices I return to.
-            </p>
+            <p>Internships, creative interests, and community service.</p>
           </div>
         </div>
-        <ActivityIndex entries={activities} />
-        <div className="interlude">
-          <span className="mono">A recurring thread</span>
-          <p>
-            What happens
-            <br />
-            if I <em>try it?</em>
-          </p>
-          <svg viewBox="0 0 200 200" aria-hidden="true">
-            <path d="M20 100h160M100 20v160M43 43l114 114M43 157 157 43" />
-            <circle cx="100" cy="100" r="61" />
-          </svg>
-        </div>
+        <p className="section-note">
+          Looking for my websites and apps?{" "}
+          <Link href="/projects">Visit Independent Projects →</Link>
+        </p>
+        <ActivityIndex
+          entries={activities.filter((entry) => entry.category !== "Building")}
+        />
       </section>
       <PageTurn
         previous={["/education", "Education"]}
-        next={["/research", "Research"]}
+        next={["/awards", "Awards"]}
       />
     </>
   );

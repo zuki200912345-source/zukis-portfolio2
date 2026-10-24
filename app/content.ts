@@ -245,21 +245,9 @@ export const activities: Entry[] = [
 
 export const research = [
   {
-    id: "maths-ia",
-    subject: "Mathematics · Internal assessment",
-    title: "A steak, a cross-section, a heat equation.",
-    code: "MTH",
-    question:
-      "How can the one-dimensional heat equation be used to model heat transfer through a steak as it cooks?",
-    method: "Mathematical modelling · one-dimensional heat equation",
-    text: "An exploration of cooking through a one-dimensional mathematical model of heat transfer. The central idea is to describe how temperature varies with position and time inside a steak, connecting a familiar kitchen process with partial differential equations.",
-    formula: "∂T/∂t = α ∂²T/∂x²",
-    type: "heat",
-  },
-  {
     id: "scg",
     subject: "Independent research",
-    title: "A second life for coffee grounds.",
+    title: "Spent coffee grounds for heavy-metal remediation",
     code: "SCG",
     question:
       "How suitable are spent coffee grounds for heavy-metal remediation in water and soil?",
@@ -269,9 +257,21 @@ export const research = [
     type: "surface",
   },
   {
+    id: "maths-ia",
+    subject: "Mathematics · Internal assessment",
+    title: "Modelling heat transfer through a steak",
+    code: "MTH",
+    question:
+      "How can the one-dimensional heat equation be used to model heat transfer through a steak as it cooks?",
+    method: "Mathematical modelling · one-dimensional heat equation",
+    text: "An exploration of cooking through a one-dimensional mathematical model of heat transfer. The central idea is to describe how temperature varies with position and time inside a steak, connecting a familiar kitchen process with partial differential equations.",
+    formula: "∂T/∂t = α ∂²T/∂x²",
+    type: "heat",
+  },
+  {
     id: "physics-ia",
     subject: "Physics · Internal assessment",
-    title: "What does another layer change?",
+    title: "Bubble-wrap insulation and water cooling",
     code: "PHY",
     question:
       "How does the number of bubble-wrap layers (0, 1, 2, 3, 4, 5 layers) surrounding a beaker affect the cooling constant, k, of water from 80 °C to 40 °C, determined from temperature–time measurements using Newton’s law of cooling?",
@@ -283,7 +283,7 @@ export const research = [
   {
     id: "chemistry-ia",
     subject: "Chemistry · Internal assessment",
-    title: "Heating, juice, and what a titration measures.",
+    title: "Heating orange juice and iodine-reducing capacity",
     code: "CHM",
     question:
       "How does heating time (0, 2, 4, 6, 8, 10 and 12 min) at a water bath temperature of 60.0 °C affect the concentration of iodine-reducing substances, expressed as ascorbic acid equivalents in mol dm⁻³, in Juhayna carton orange juice compared with prepared ascorbic acid solution, determined by iodometric back titration?",

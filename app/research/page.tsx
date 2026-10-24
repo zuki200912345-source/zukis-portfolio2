@@ -1,66 +1,73 @@
 import type { Metadata } from "next";
-import { Chapter, PageTurn } from "../site-shell";
+import { PageTurn } from "../site-shell";
 import { research } from "../content";
-import { ResearchDiagram } from "../portfolio-ui";
-
 export const metadata: Metadata = { title: "Research" };
-
+const publication =
+  "https://nhsjs.com/2026/how-suitable-are-spent-coffee-grounds-for-heavy-metal-remediation-in-water-and-soil-a-systematic-review-of-mechanisms-conditions-and-practical-viability/";
 export default function Page() {
   return (
     <>
-      <section
-        id="research"
-        className="research section"
-        aria-labelledby="research-title"
-      >
-        <Chapter number="03" label="Research projects" />
-        <div className="section-heading">
-          <h1 id="research-title">
-            Stay with
-            <br />
-            <em>the question.</em>
-          </h1>
-          <div className="heading-note">
-            <span className="tiny-cross" aria-hidden="true">
-              +
-            </span>
-            <p>
-              Investigations in materials,
-              <br />
-              heat, and chemistry.
-            </p>
-            <p className="mono">Questions & approaches</p>
-          </div>
+      <section className="section" aria-labelledby="research-title">
+        <div className="page-heading">
+          <p className="eyebrow">Published work & school investigations</p>
+          <h1 id="research-title">Research</h1>
+          <p>
+            My independent research comes first, followed by my IB internal
+            assessments.
+          </p>
         </div>
+        <nav className="on-this-page" aria-label="Research on this page">
+          <strong>On this page</strong>
+          {research.map((item) => (
+            <a key={item.id} href={`#${item.id}`}>
+              {item.id === "scg"
+                ? "Coffee grounds"
+                : item.subject.split(" · ")[0]}
+            </a>
+          ))}
+        </nav>
         <div className="research-list">
-          {research.map((item, i) => (
-            <article className="research-entry" key={item.id} id={item.id}>
-              <div className="research-art">
-                <ResearchDiagram type={item.type} />
-                <span className="mono">
-                  {item.code} / 0{i + 1}
-                </span>
+          {research.map((item) => (
+            <article
+              className={`research-entry ${item.id === "scg" ? "featured-research" : ""}`}
+              key={item.id}
+              id={item.id}
+            >
+              <p className="eyebrow">
+                {item.subject}
+                {item.id === "scg" ? " · Published" : ""}
+              </p>
+              <h2>{item.title}</h2>
+              {item.id === "scg" ? (
+                <>
+                  <p className="publication-meta">
+                    National High School Journal of Science · 21 October 2026
+                  </p>
+                  <a
+                    className="button"
+                    href={publication}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Read the published article ↗
+                  </a>
+                </>
+              ) : null}
+              <div className="question">
+                <h3>Research question</h3>
+                <p>{item.question}</p>
               </div>
-              <div className="research-copy">
-                <p className="mono research-meta">{item.subject}</p>
-                <h2>{item.title}</h2>
-                <div className="question">
-                  <span className="mono">The question</span>
-                  <p>{item.question}</p>
-                </div>
-                <p className="research-description">{item.text}</p>
-                <div className="research-footer">
-                  <span className="mono">{item.method}</span>
-                  <span className="formula">{item.formula}</span>
-                </div>
-              </div>
+              <p>{item.text}</p>
+              <p className="method">
+                <strong>Method:</strong> {item.method}
+              </p>
             </article>
           ))}
         </div>
       </section>
       <PageTurn
-        previous={["/activities", "Activities"]}
-        next={["/awards", "Awards"]}
+        previous={["/", "Home"]}
+        next={["/projects", "Independent Projects"]}
       />
     </>
   );

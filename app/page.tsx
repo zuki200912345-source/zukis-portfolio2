@@ -1,133 +1,86 @@
 import Link from "next/link";
-import { Atlas } from "./portfolio-ui";
-import { activities, research, awards } from "./content";
 
-const destinations = [
+const sections = [
+  {
+    href: "/research",
+    name: "Research",
+    detail:
+      "My published coffee grounds review and investigations in mathematics, physics, and chemistry.",
+    action: "View research",
+  },
+  {
+    href: "/projects",
+    name: "Independent Projects",
+    detail:
+      "Websites, learning tools, games, and software I have built or helped develop.",
+    action: "Browse projects",
+  },
   {
     href: "/education",
-    number: "01",
     name: "Education",
-    line: "The starting point.",
-    detail: "Six IB subjects and the communities I help build at school.",
-    count: "Subjects & school life",
+    detail:
+      "My IB subjects and the clubs and conferences I help organise at school.",
+    action: "View education",
   },
   {
     href: "/activities",
-    number: "02",
     name: "Activities",
-    line: "Outside the lines.",
     detail:
-      "Products, professional experiences, creative practice, and community.",
-    count: `${activities.length} activities`,
-  },
-  {
-    href: "/research",
-    number: "03",
-    name: "Research",
-    line: "Stay with the question.",
-    detail: "Heat, chemistry, and the potential of a familiar waste material.",
-    count: `${research.length} investigations`,
+      "Internships, cooking, piano, Model United Nations, and community service.",
+    action: "View activities",
   },
   {
     href: "/awards",
-    number: "04",
     name: "Awards & honours",
-    line: "A few milestones.",
     detail: "Recognition in chemistry, physics, mathematics, and STEM.",
-    count: `${awards.length} honours`,
+    action: "View awards",
+  },
+  {
+    href: "/about",
+    name: "About me",
+    detail: "A little about my interests and how to get in touch.",
+    action: "Meet Zuki",
   },
 ];
-
 export default function Home() {
   return (
-    <>
-      <section className="hero" aria-labelledby="hero-title">
-        <div className="hero-topline mono">
-          <span>Personal website / Cairo, Egypt</span>
-          <span>IB diploma candidate · 2027</span>
-        </div>
-        <div className="hero-name">
-          <p className="hero-kicker mono">Abdallah El Dessouky</p>
-          <h1 id="hero-title">
-            <span className="hero-title-line">Call me</span>
-            <em>Zuki.</em>
-            <span className="name-asterisk" aria-hidden="true">
-              ✳
-            </span>
-          </h1>
-        </div>
-        <Atlas />
-        <div className="hero-bottom">
-          <p>
-            I follow questions
-            <br />
-            across disciplines.
-            <br />
-            <span>Then I make things.</span>
-          </p>
-          <Link className="round-link" href="/education">
-            <span>
-              Enter the
-              <br />
-              portfolio
-            </span>
-            <span aria-hidden="true">↘</span>
+    <div className="section home-page">
+      <section className="home-intro" aria-labelledby="home-title">
+        <p className="eyebrow">Abdallah El Dessouky · Cairo, Egypt</p>
+        <h1 id="home-title">Hi, I’m Zuki.</h1>
+        <p className="lead">
+          I’m an IB student interested in materials science and engineering. I
+          research, build software, and explore the chemistry behind cooking.
+        </p>
+        <div className="actions">
+          <Link className="button" href="/research">
+            Explore my research →
           </Link>
-          <p className="hero-note mono">
-            Science. Software.
-            <br />A piano. A kitchen.
-            <br />A few connections.
-          </p>
-        </div>
-        <div className="hero-baseline mono">
-          <span>Choose a chapter ↓</span>
-          <span>A work in curiosity, always.</span>
-          <span>01 — 04</span>
+          <Link className="button secondary" href="/projects">
+            See my projects →
+          </Link>
         </div>
       </section>
-      <section
-        className="home-directory section"
-        aria-labelledby="directory-title"
-      >
-        <div className="chapter-label">
-          <span>Index</span>
-          <span>Choose a direction</span>
-          <span className="chapter-line" />
-        </div>
-        <div className="section-heading">
-          <h2 id="directory-title">
-            A few different
-            <br />
-            <em>ways in.</em>
-          </h2>
-          <p className="directory-note">
-            Each chapter has its own page.
-            <br />
-            Follow what interests you.
-          </p>
-        </div>
+      <aside className="publication-strip">
+        <span className="eyebrow">Published research · October 2026</span>
+        <Link href="/research#scg">
+          Spent coffee grounds for heavy-metal remediation{" "}
+          <span aria-hidden="true">→</span>
+        </Link>
+        <p>Read about the study and find the full article in NHSJS.</p>
+      </aside>
+      <section className="directory" aria-labelledby="directory-title">
+        <h2 id="directory-title">Explore my work</h2>
         <div className="destination-grid">
-          {destinations.map((item) => (
-            <Link href={item.href} className="destination" key={item.href}>
-              <span className="destination-top mono">
-                <span>
-                  {item.number} / {item.name}
-                </span>
-                <span aria-hidden="true">↗</span>
-              </span>
-              <h3>{item.line}</h3>
+          {sections.map((item) => (
+            <Link className="destination" href={item.href} key={item.href}>
+              <h3>{item.name}</h3>
               <p>{item.detail}</p>
-              <span className="destination-count mono">{item.count}</span>
+              <span className="text-link">{item.action} →</span>
             </Link>
           ))}
         </div>
-        <Link href="/about" className="about-link">
-          <span className="mono">And the person behind it all</span>
-          <span>
-            Meet Zuki <em>↗</em>
-          </span>
-        </Link>
       </section>
-    </>
+    </div>
   );
 }

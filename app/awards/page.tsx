@@ -14,17 +14,7 @@ export default function Page() {
       >
         <Chapter number="04" label="Awards & honours" />
         <div className="section-heading">
-          <h1 id="awards-title">
-            A few
-            <br />
-            <em>milestones.</em>
-          </h1>
-          <div className="award-seal" aria-hidden="true">
-            <svg viewBox="0 0 160 160">
-              <path d="M80 12 96 48 133 27 112 64 148 80 112 96 133 133 96 112 80 148 64 112 27 133 48 96 12 80 48 64 27 27 64 48Z" />
-            </svg>
-            <span>AED</span>
-          </div>
+          <h1 id="awards-title">Awards & honours</h1>
         </div>
         <div className="award-list">
           {awards.map((award, i) => (
@@ -43,7 +33,7 @@ export default function Page() {
         </div>
       </section>
       <PageTurn
-        previous={["/research", "Research"]}
+        previous={["/activities", "Activities"]}
         next={["/about", "About"]}
       />
     </>

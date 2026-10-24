@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Chapter, PageTurn } from "../site-shell";
-import { activities } from "../content";
+import { allActivities } from "../project-content";
 import { ActivityIndex } from "../portfolio-ui";
 
 export const metadata: Metadata = { title: "Activities" };
@@ -33,7 +33,11 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <ActivityIndex entries={activities} />
+        <p className="activity-intro">
+          Explore my leadership, research, work, projects, and interests. An
+          experience can appear in more than one category.
+        </p>
+        <ActivityIndex entries={allActivities} searchable />
         <div className="interlude">
           <span className="mono">A recurring thread</span>
           <p>

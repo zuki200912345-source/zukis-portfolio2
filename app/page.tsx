@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { projects, internships } from "./project-content";
+import { projects, internships, allActivities } from "./project-content";
 import { Atlas } from "./portfolio-ui";
-import { activities, research, awards } from "./content";
+import { research, awards } from "./content";
 
 const destinations = [
   {
@@ -18,15 +18,16 @@ const destinations = [
     name: "Activities",
     line: "Outside the lines.",
     detail:
-      "Products, professional experiences, creative practice, and community.",
-    count: `${activities.length} activities`,
+      "3alemny, Model United Nations leadership, internships, cooking, music, and more.",
+    count: `${allActivities.length} experiences`,
   },
   {
     href: "/research",
     number: "03",
     name: "Research",
     line: "Stay with the question.",
-    detail: "Heat, chemistry, and the potential of a familiar waste material.",
+    detail:
+      "A published coffee-grounds review, plus investigations in heat and chemistry.",
     count: `${research.length} investigations`,
   },
   {
@@ -60,7 +61,7 @@ const destinations = [
     line: "At the piano.",
     detail:
       "Listening, interpretation, and practice through the Trinity College London programme.",
-    count: "Piano · since 2017",
+    count: "Piano · since age six",
   },
 ];
 

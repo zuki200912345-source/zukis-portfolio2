@@ -329,9 +329,14 @@ function ActivityEntry({
           {String(index + 1).padStart(2, "0")}
         </span>
         <div className="entry-heading">
-          <span className="entry-category mono">{entry.category}</span>
+          <span className="entry-category mono">
+            {entry.categories?.join(" · ") || entry.category}
+          </span>
           <Heading>{entry.name}</Heading>
           <span className="entry-role">{entry.role}</span>
+          {entry.period ? (
+            <span className="entry-period mono">{entry.period}</span>
+          ) : null}
         </div>
         <p className="entry-summary">{entry.summary}</p>
         <span className="entry-toggle" aria-hidden="true">
@@ -343,7 +348,9 @@ function ActivityEntry({
           <span>{entry.period || entry.category}</span>
           {entry.href ? (
             <a href={entry.href} target="_blank" rel="noopener noreferrer">
-              Visit project ↗
+              {entry.linkLabel ||
+                (entry.id === "cooking" ? "See cooking" : "Visit project")}{" "}
+              ↗
             </a>
           ) : null}
         </div>
@@ -361,23 +368,54 @@ export function ActivityIndex({
   entries,
   variant,
   label = "activities",
+  searchable = false,
 }: {
   entries: Entry[];
   variant?: "school";
   label?: string;
+  searchable?: boolean;
 }) {
   const [filter, setFilter] = useState("All");
+  const [query, setQuery] = useState("");
   const [openAll, setOpenAll] = useState(false);
   const categories = [
     "All",
-    ...Array.from(new Set(entries.map((entry) => entry.category))),
+    ...Array.from(
+      new Set(entries.flatMap((entry) => entry.categories ?? [entry.category])),
+    ),
   ];
-  const filtered =
-    filter === "All"
-      ? entries
-      : entries.filter((entry) => entry.category === filter);
+  const matchesCategory = (entry: Entry, category: string) =>
+    category === "All" ||
+    (entry.categories ?? [entry.category]).includes(category);
+  const filtered = entries.filter(
+    (entry) =>
+      matchesCategory(entry, filter) &&
+      [
+        entry.name,
+        entry.role,
+        entry.summary,
+        entry.period,
+        ...(entry.categories ?? [entry.category]),
+        ...entry.paragraphs,
+      ]
+        .join(" ")
+        .toLowerCase()
+        .includes(query.trim().toLowerCase()),
+  );
   return (
     <div className={`activity-index ${variant || ""}`}>
+      {searchable ? (
+        <div className="activity-search">
+          <label htmlFor="activity-search">Find an experience</label>
+          <input
+            id="activity-search"
+            type="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder="Search a role, organisation, or interest"
+          />
+        </div>
+      ) : null}
       <div className="activity-toolbar">
         {variant ? (
           <span className="mono">
@@ -396,8 +434,9 @@ export function ActivityIndex({
                 <span>
                   {category === "All"
                     ? entries.length
-                    : entries.filter((entry) => entry.category === category)
-                        .length}
+                    : entries.filter((entry) =>
+                        matchesCategory(entry, category),
+                      ).length}
                 </span>
               </button>
             ))}
@@ -412,9 +451,25 @@ export function ActivityIndex({
           <span aria-hidden="true">{openAll ? "−" : "+"}</span>
         </button>
       </div>
-      <p className="visually-hidden" role="status">
-        {filtered.length} {label} shown
+      <p
+        className={searchable ? "activity-results mono" : "visually-hidden"}
+        role="status"
+      >
+        {filtered.length}{" "}
+        {filtered.length === 1
+          ? label === "activities"
+            ? "activity"
+            : label === "music entries"
+              ? "music entry"
+              : label.replace(/s$/, "")
+          : label}{" "}
+        shown
       </p>
+      {filtered.length === 0 ? (
+        <p className="activity-empty">
+          No experiences match. Try another search or category.
+        </p>
+      ) : null}
       {filtered.map((entry) => (
         <ActivityEntry
           key={`${entry.id}-${openAll}`}

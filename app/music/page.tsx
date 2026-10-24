@@ -25,7 +25,10 @@ export default function Page() {
             <span className="tiny-cross" aria-hidden="true">
               +
             </span>
-            <p>Listening, interpretation, and practice since 2017.</p>
+            <p>
+              Playing since age six. Trinity College London programme since
+              2017.
+            </p>
           </div>
         </div>
         <ActivityIndex entries={music} label="music entries" />

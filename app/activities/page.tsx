@@ -34,8 +34,8 @@ export default function Page() {
           </div>
         </div>
         <p className="activity-intro">
-          Reports, products, events, and personal work: what I contributed and
-          what came out of it. Experiences can appear in more than one category.
+          The projects I have built, teams I have led, and interests I keep
+          working at. Use the categories to explore.
         </p>
         <ActivityIndex entries={allActivities} searchable />
         <div className="interlude">

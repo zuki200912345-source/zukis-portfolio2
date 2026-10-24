@@ -357,7 +357,7 @@ function ActivityEntry({
         <div className="entry-prose">
           {entry.outcomes?.length ? (
             <div className="entry-outcomes">
-              <p className="mono outcome-label">Outputs & outcomes</p>
+              <p className="mono outcome-label">What I contributed</p>
               <ul>
                 {entry.outcomes.map((outcome) => (
                   <li key={outcome}>{outcome}</li>

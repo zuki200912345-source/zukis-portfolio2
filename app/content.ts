@@ -61,7 +61,7 @@ export const schoolActivities: Entry[] = [
       "Coordinated delegation forms, school communications, and committee-report preparation for BISCMUN XIV, scheduled for December 2026.",
     paragraphs: [
       "As Secretary-General, I lead the student team preparing BISCMUN XIV. My work includes coordinating with participating schools and the school administration, organising delegation information, and following up on committee preparation.",
-      "The work already produced includes school-specific delegation forms, registration correspondence, and revised chair-report materials. The conference is scheduled for 3–5 December 2026; its final attendance and results will be recorded after it takes place.",
+      "For the 3–5 December 2026 conference, I have coordinated school-specific delegation forms, registration follow-up, chair-report revisions, and opening-ceremony invitations.",
     ],
     period: "2025–present",
     categories: ["Leadership", "Community"],
@@ -81,12 +81,12 @@ export const schoolActivities: Entry[] = [
       "Co-founded a club where younger students develop engineering projects in sustainability and technology.",
     paragraphs: [
       "I co-founded the Engineering & Innovation Club at the British International School, Cairo. I recruit and mentor younger students and help them plan practical engineering projects.",
-      "Our proposed air-quality monitoring project starts with deciding what to measure and how to test a device. It is still a development project; the website’s concept images are not photographs of working hardware.",
+      "I helped develop the plan for an air-quality monitoring project, working through what the device should measure and how we would test it.",
     ],
     categories: ["Leadership", "Science & research", "Building"],
     outcomes: [
       "Co-founded a school club and recruited and mentored younger students.",
-      "Developed plans for an air-quality monitoring project; hardware testing remains ahead.",
+      "Developed an air-quality monitoring project plan.",
     ],
   },
   {
@@ -120,7 +120,7 @@ export const activities: Entry[] = [
       "Launched a bilingual Egyptian-curriculum study platform with tutoring, practice tools, and a student-feedback process.",
     paragraphs: [
       "I co-founded 3alemny and lead its technical development, including the platform architecture, AI integration, database, and interface. The product brings study tools for the Egyptian curriculum into one web platform.",
-      "I demonstrated the platform at sports clubs and youth centres and worked with teachers and alumni on curriculum coverage and feature feedback. A feedback survey and product demo helped turn conversations into material we could use when revising the product.",
+      "I demonstrated the platform at sports clubs and youth centres and worked with teachers and alumni on curriculum coverage and feature feedback. I used demonstrations and a feedback survey to gather suggestions for product revisions.",
     ],
     categories: ["Building", "Leadership", "Community"],
     outcomes: [
@@ -143,7 +143,7 @@ export const activities: Entry[] = [
     categories: ["Building"],
     outcomes: [
       "Developed SAT practice and drill interfaces with a product partner.",
-      "Worked on progress tools intended to help tutors identify areas for further practice.",
+      "Developed progress-tracking tools for tutors to review student practice.",
     ],
   },
   {
@@ -155,15 +155,15 @@ export const activities: Entry[] = [
     summary:
       "Produced literature reviews, policy notes, a peer-survey analysis, and a presentation on cognitive offloading; developed Anchor with a fellow intern.",
     paragraphs: [
-      "During a five-week placement with Meta’s Global Policy team, I worked with a fellow intern on research into young people’s use of AI. Our materials combined a literature review with an exploratory survey of 20 peers. The survey was a small, self-reported sample, not a representative study of young people.",
-      "I presented the work to my supervisor and policy professionals and revised it following feedback. The presentation compared stronger and weaker forms of evidence and proposed approaches such as requiring an initial attempt, offering hints, and keeping a teacher involved. The recommendations were part of our research presentation.",
-      "The practical output was Anchor, a prototype designed around cognitive practice and awareness of AI use. Building the platform did not establish that it improves cognition; that would require separate testing.",
+      "During my five-week placement with Meta’s Global Policy team, I researched young people’s use of AI with a fellow intern. We combined literature reviews with an exploratory survey of 20 peers and developed executive policy notes on cognitive offloading.",
+      "I presented our findings to my supervisor and policy professionals, then revised the work in response to their feedback. Our recommendations included asking students to attempt a problem before using AI, offering hints, and keeping teachers involved.",
+      "We also built Anchor, a cognitive-practice prototype, and shared the deployed version with our supervisor. It gave us a way to explore our research questions through product development.",
     ],
     categories: ["Work experience", "Science & research"],
     outcomes: [
-      "Written literature reviews and executive policy notes on youth AI use and cognitive offloading.",
-      "A collaborative peer survey and presentation translating the research into recommendations.",
-      "An Anchor prototype exploring ways to keep users actively thinking while using AI.",
+      "Produced literature reviews and executive policy notes on youth AI use.",
+      "Co-developed a survey of 20 peers and presented research-based recommendations to policy professionals.",
+      "Built and shared Anchor, a cognitive-practice prototype, with a fellow intern.",
     ],
   },
   {
@@ -212,8 +212,8 @@ export const activities: Entry[] = [
     summary:
       "Prepared and submitted a presentation explaining KarmSolar’s four business lines during my Technical Office placement.",
     paragraphs: [
-      "During my four-week KarmSolar placement, I prepared slides explaining the company’s four business lines and sent the presentation to my supervisor. This gave me a concrete task: turn unfamiliar energy-business material into an explanation someone else could follow.",
-      "Other assigned exercises involved comparing project performance and improvement, interpreting an income statement, and reviewing company materials. The placement combined business research with supervised analytical exercises.",
+      "During my four-week KarmSolar placement, I researched the company’s four business lines and prepared a presentation for my supervisor. I explained how generation, microgrids, geographical distribution, and urban distribution fit into its energy business.",
+      "My assigned analytical work also covered project performance and income statements, introducing me to the financial decisions behind energy projects.",
     ],
     categories: ["Work experience", "Science & research"],
     outcomes: [
@@ -297,12 +297,12 @@ export const activities: Entry[] = [
     summary:
       "Created a visual learning interface for younger children’s maths and literacy.",
     paragraphs: [
-      "I created Lumi to explore visual maths and literacy activities for younger children. I developed the lesson interface and experimented with colour, navigation, and small visual rewards. It is an interface project; I have not measured its effect on learning outcomes.",
+      "I built Lumi’s maths and literacy lesson interface for younger children, experimenting with colour, navigation, and visual rewards to make each activity easy to follow.",
     ],
     categories: ["Building"],
     outcomes: [
       "Built a visual maths and literacy interface for younger children.",
-      "Explored lesson navigation and visual feedback; educational effectiveness has not been measured.",
+      "Designed lesson navigation and visual feedback for a young audience.",
     ],
   },
   {
@@ -312,13 +312,13 @@ export const activities: Entry[] = [
     category: "Building",
     period: "In development",
     summary:
-      "An ongoing experiment with running a language model locally and comparing speed, capability, and memory use.",
+      "Configuring a local language-model setup and exploring response speed and memory use.",
     paragraphs: [
       "I am developing Nano to explore running a language model on my own computer. The project involves configuring local inference and examining how available hardware affects response speed and memory requirements.",
     ],
     categories: ["Building"],
     outcomes: [
-      "Developing a local language-model setup, with speed and memory trade-offs still being explored.",
+      "Configuring local inference and comparing hardware demands.",
     ],
   },
   {
@@ -390,7 +390,7 @@ export const research = [
     question:
       "How suitable are spent coffee grounds for heavy-metal remediation in water and soil?",
     method: "Systematic literature review",
-    text: "Published in the National High School Journal of Science on 21 October 2026, this review synthesises 30 studies on spent coffee grounds and heavy-metal remediation. I separated five material categories and compared the mechanisms, preparation methods, and conditions behind reported results. The review identifies promising uses and gaps in long-term field evidence; it does not report a treatment system I built or tested. Sabrina Hu, a PhD candidate at the University of Cambridge, mentored the work.",
+    text: "I published a systematic review of 30 studies in the National High School Journal of Science on 21 October 2026. I compared five categories of coffee-ground materials, examining how preparation methods and treatment conditions affect heavy-metal removal. The review identifies promising applications and priorities for long-term field research. Sabrina Hu, a PhD candidate at the University of Cambridge, mentored the work.",
     formula: "surface → interaction → application",
     type: "surface",
     outcome:
@@ -404,7 +404,7 @@ export const research = [
     question:
       "How can the one-dimensional heat equation be used to model heat transfer through a steak as it cooks?",
     method: "Mathematical modelling · one-dimensional heat equation",
-    text: "An exploration of cooking through a one-dimensional mathematical model of heat transfer. The central idea is to describe how temperature varies with position and time inside a steak, connecting a familiar kitchen process with partial differential equations.",
+    text: "I use the one-dimensional heat equation to model how temperature changes inside a steak as it cooks. The investigation connects position and time to heat transfer, applying partial differential equations to a question from my own cooking.",
     formula: "∂T/∂t = α ∂²T/∂x²",
     type: "heat",
   },
@@ -416,7 +416,7 @@ export const research = [
     question:
       "How does the number of bubble-wrap layers (0, 1, 2, 3, 4, 5 layers) surrounding a beaker affect the cooling constant, k, of water from 80 °C to 40 °C, determined from temperature–time measurements using Newton’s law of cooling?",
     method: "Experimental investigation · thermal modelling",
-    text: "An investigation of insulation and cooling using temperature–time measurements and exponential fitting. The analysis considers the effective cooling constant of the complete setup, the constant-k assumption, and sources of uncertainty such as surface losses and wrap attachment.",
+    text: "I investigate how layers of bubble wrap affect the rate at which water cools. Using temperature–time measurements and exponential fitting, I compare cooling constants and examine how surface heat loss and wrap attachment affect the model.",
     formula: "dT/dt = −k(T − Tₐ)",
     type: "cooling",
   },
@@ -428,7 +428,7 @@ export const research = [
     question:
       "How does heating time (0, 2, 4, 6, 8, 10 and 12 min) at a water bath temperature of 60.0 °C affect the concentration of iodine-reducing substances, expressed as ascorbic acid equivalents in mol dm⁻³, in Juhayna carton orange juice compared with prepared ascorbic acid solution, determined by iodometric back titration?",
     method: "Experimental investigation · iodometric back titration",
-    text: "A comparison of orange juice and a simpler ascorbic acid solution under controlled heating. The scope distinguishes iodine-reducing capacity from a selective measurement of vitamin C, and compares retention relative to each sample’s initial concentration.",
+    text: "I compare orange juice with an ascorbic acid solution after controlled heating, using iodometric back titration to measure changes in iodine-reducing capacity. Comparing each sample with its initial concentration helps me examine how the mixture in orange juice affects the result.",
     formula: "I₂ + 2S₂O₃²⁻ → 2I⁻ + S₄O₆²⁻",
     type: "reaction",
   },

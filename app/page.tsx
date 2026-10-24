@@ -18,7 +18,7 @@ const destinations = [
     name: "Activities",
     line: "Outside the lines.",
     detail:
-      "Products, reports, conference preparation, creative work, and the contributions behind them.",
+      "Building study tools, leading student teams, cooking, and making music.",
     count: `${allActivities.length} experiences`,
   },
   {
@@ -108,7 +108,7 @@ export default function Home() {
         </div>
         <div className="hero-baseline mono">
           <span>Choose a chapter ↓</span>
-          <span>A work in curiosity, always.</span>
+          <span>Research, projects & life beyond school.</span>
           <span>01 — 07</span>
         </div>
       </section>

@@ -10,11 +10,11 @@ export const metadata: Metadata = {
     template: "%s · Abdallah El Dessouky",
   },
   description:
-    "Education, activities, research questions, and honours of Abdallah El Dessouky, an IB student in Cairo interested in materials science, engineering, and learning.",
+    "Published research, software projects, student leadership, and creative work by Abdallah El Dessouky, an IB student in Cairo.",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
   openGraph: {
     title: "Abdallah ‘Zuki’ El Dessouky",
-    description: "Science, software, a piano, a kitchen. A few connections.",
+    description: "Research, software, student leadership, cooking, and music by Abdallah El Dessouky.",
     type: "website",
     locale: "en_GB",
   },

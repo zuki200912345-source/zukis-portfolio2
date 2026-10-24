@@ -22,22 +22,9 @@ export const projects: Entry[] = [
       summary:
         "A card-battle game with 16 playable cards and friendly online matches.",
       paragraphs: [
-        "I developed Riftfront with AI-assisted development tools. The current version has 16 playable cards and friendly online matches; the larger card collection and progression systems are still in development.",
+        "I developed a playable card-battle prototype with 16 cards and friendly online matches, using AI-assisted development tools.",
       ],
       href: "https://clash.adessouky.com",
-    },
-    {
-      id: "slipstream",
-      name: "SLIPSTREAM",
-      role: "Browser racing project",
-      category: "Games",
-      period: "Prototype",
-      summary:
-        "A browser racing game with room-based multiplayer in development.",
-      paragraphs: [
-        "I developed SLIPSTREAM with AI-assisted development tools. The frontend is published; multiplayer currently depends on a development server and is not continuously available.",
-      ],
-      href: "https://car.adessouky.com",
     },
     {
       id: "anchor",
@@ -53,7 +40,7 @@ export const projects: Entry[] = [
       ],
       paragraphs: [
         "Anchor grew out of our research on cognitive offloading during the Meta internship. I worked with a fellow intern to turn the research questions into a prototype and shared a deployed version with our supervisor in August 2026.",
-        "The platform is an exploratory product. Its intended benefit—supporting independent thinking while using AI—has not been established through an effectiveness study.",
+        "The project brought together our policy research and product work: we explored how an AI-powered interface could encourage users to stay involved in the thinking process.",
       ],
     },
     {
@@ -63,35 +50,11 @@ export const projects: Entry[] = [
       category: "Games",
       period: "Play online",
       summary:
-        "A jetpack game with missions, upgrades, different environments, and saved progress. Players can start as a guest or use an account.",
+        "Built a browser jetpack game with missions, upgrades, and saved progress, supporting both guest play and accounts.",
       paragraphs: [
-        "A jetpack game with missions, upgrades, different environments, and saved progress. Players can start as a guest or use an account.",
+        "Built a browser jetpack game with missions, upgrades, and saved progress, supporting both guest play and accounts.",
       ],
       href: "https://jet.adessouky.com",
-    },
-    {
-      id: "fortday",
-      name: "Fortday",
-      role: "Multiplayer game project",
-      category: "Games",
-      period: "In development",
-      summary:
-        "A browser game combining third-person movement, combat, and building. Multiplayer and the game world are still being developed and tested.",
-      paragraphs: [
-        "A browser game combining third-person movement, combat, and building. Multiplayer and the game world are still being developed and tested.",
-      ],
-    },
-    {
-      id: "texas-holdem",
-      name: "Texas Hold’em",
-      role: "Browser game",
-      category: "Games",
-      period: "Private demo",
-      summary:
-        "A single-player card game against three computer opponents, using play-money chips. The demo is private.",
-      paragraphs: [
-        "A single-player card game against three computer opponents, using play-money chips. The demo is private.",
-      ],
     },
     {
       id: "pocket-cloud",
@@ -113,9 +76,9 @@ export const projects: Entry[] = [
       category: "Websites & tools",
       period: "Private demo",
       summary:
-        "A website introducing the club and its proposed engineering projects, with a members’ portal for club resources. The demo is private.",
+        "Built a website and portal prototype to introduce the club, explain proposed engineering projects, and organise member resources.",
       paragraphs: [
-        "A website introducing the club and its proposed engineering projects, with a members’ portal for club resources. The demo is private.",
+        "Built a website and portal prototype to introduce the club, explain proposed engineering projects, and organise member resources.",
       ],
     },
     {
@@ -125,9 +88,9 @@ export const projects: Entry[] = [
       category: "Websites & tools",
       period: "Published",
       summary:
-        "This website brings together my research, education, projects, and activities.",
+        "Built and published a portfolio bringing my research, projects, and activities into one place.",
       paragraphs: [
-        "This website brings together my research, education, projects, and activities.",
+        "Built and published a portfolio bringing my research, projects, and activities into one place.",
       ],
       href: "https://adessouky.com",
     },

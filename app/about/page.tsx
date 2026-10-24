@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PageTurn } from "../site-shell";
+import { Chapter, PageTurn } from "../site-shell";
 
 export const metadata: Metadata = { title: "About" };
 
@@ -7,8 +7,12 @@ export default function Page() {
   return (
     <>
       <section className="about section" aria-labelledby="about-title">
-        <div className="about-label mono">Abdallah El Dessouky</div>
-        <h1 id="about-title">About me</h1>
+        <div className="about-label mono">The person between the projects</div>
+        <h1 id="about-title">
+          Curiosity rarely stays
+          <br />
+          in <em>one subject.</em>
+        </h1>
         <div className="about-grid">
           <p>
             I’m Abdallah El Dessouky, usually called Zuki. I’m an IB student in

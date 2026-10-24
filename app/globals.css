@@ -2913,3 +2913,11 @@ footer {
 @media (max-width: 580px) {
   #activities .filters button { font-size: 11px; min-height: 40px; padding: 8px; }
 }
+
+.entry-outcomes { border-left: 2px solid var(--accent); padding-left: 20px; margin: 0 0 28px; }
+.entry-outcomes .outcome-label, .outcome-label { font-size: 10px; letter-spacing: .08em; margin: 0 0 12px; }
+.entry-outcomes ul { margin: 0; padding-left: 18px; }
+.entry-outcomes li { font-size: 14px; line-height: 1.7; margin: 8px 0; }
+.research-outcome { border-left: 2px solid currentColor; padding-left: 18px; margin: 24px 0; }
+.research-outcome > p:last-child { font-size: 15px; line-height: 1.6; }
+@media (max-width: 580px) { .entry-outcomes { padding-left: 14px; } .entry-outcomes li { font-size: 13px; } }

@@ -58,6 +58,12 @@ export default function Page() {
                   <span className="mono">The question</span>
                   <p>{item.question}</p>
                 </div>
+                {"outcome" in item && item.outcome ? (
+                  <div className="research-outcome">
+                    <p className="mono outcome-label">Published output</p>
+                    <p>{item.outcome}</p>
+                  </div>
+                ) : null}
                 <p className="research-description">{item.text}</p>
                 <div className="research-footer">
                   <span className="mono">{item.method}</span>

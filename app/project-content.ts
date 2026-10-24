@@ -42,13 +42,18 @@ export const projects: Entry[] = [
     {
       id: "anchor",
       name: "Anchor",
-      role: "App project",
+      role: "Collaborative app project",
       category: "Learning & AI",
-      period: "Prototype",
+      period: "Prototype · 2026",
       summary:
-        "An app exploring how people can use AI while remaining involved in their own thinking, developed from my research into cognitive offloading.",
+        "Built a cognitive-practice prototype with a fellow intern, applying questions from our Meta research to a working product.",
+      outcomes: [
+        "Developed an AI-powered prototype focused on cognitive practice and awareness of AI use.",
+        "Shared the deployed prototype with our supervisor during the placement.",
+      ],
       paragraphs: [
-        "An app exploring how people can use AI while remaining involved in their own thinking, developed from my research into cognitive offloading.",
+        "Anchor grew out of our research on cognitive offloading during the Meta internship. I worked with a fellow intern to turn the research questions into a prototype and shared a deployed version with our supervisor in August 2026.",
+        "The platform is an exploratory product. Its intended benefit—supporting independent thinking while using AI—has not been established through an effectiveness study.",
       ],
     },
     {
@@ -130,14 +135,18 @@ export const projects: Entry[] = [
 ];
 
 const publishedResearch: Entry = {
+  outcomes: [
+    "Published a systematic review in the National High School Journal of Science.",
+    "Synthesised 30 studies and distinguished five material categories, their reported performance, and practical limitations.",
+  ],
   id: "coffee-research",
   name: "Spent coffee grounds research",
   role: "Author · systematic literature review",
   category: "Science & research",
   categories: ["Science & research"],
-  period: "Published 2026",
+  period: "Published 21 October 2026",
   summary:
-    "Published a review of spent coffee grounds for heavy-metal remediation in water and soil.",
+    "Published a 30-study review comparing five types of spent-coffee-ground materials for heavy-metal remediation.",
   paragraphs: [
     "I reviewed how spent coffee grounds interact with heavy metals in water and soil, examining adsorption mechanisms, preparation methods, and experimental conditions. Sabrina Hu, a PhD candidate at the University of Cambridge, mentored the research.",
     "The review was published in the National High School Journal of Science. It examines both potential applications and the limitations of comparing results from different laboratory studies.",

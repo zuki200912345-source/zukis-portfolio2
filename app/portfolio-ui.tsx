@@ -355,6 +355,16 @@ function ActivityEntry({
           ) : null}
         </div>
         <div className="entry-prose">
+          {entry.outcomes?.length ? (
+            <div className="entry-outcomes">
+              <p className="mono outcome-label">Outputs & outcomes</p>
+              <ul>
+                {entry.outcomes.map((outcome) => (
+                  <li key={outcome}>{outcome}</li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
           {entry.paragraphs.map((text, i) => (
             <p key={i}>{text}</p>
           ))}
@@ -397,6 +407,7 @@ export function ActivityIndex({
         entry.period,
         ...(entry.categories ?? [entry.category]),
         ...entry.paragraphs,
+        ...(entry.outcomes ?? []),
       ]
         .join(" ")
         .toLowerCase()

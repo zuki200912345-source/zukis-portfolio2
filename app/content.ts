@@ -7,6 +7,7 @@ export type Entry = {
   linkLabel?: string;
   period?: string;
   summary: string;
+  outcomes?: string[];
   paragraphs: string[];
   href?: string;
 };
@@ -57,13 +58,18 @@ export const schoolActivities: Entry[] = [
     role: "Secretary-General",
     category: "Leadership",
     summary:
-      "Led a 450+ participant conference and a team of 50; coordinated with school administration and 10 other schools.",
+      "Coordinated delegation forms, school communications, and committee-report preparation for BISCMUN XIV, scheduled for December 2026.",
     paragraphs: [
-      "I lead BISC Model United Nations as Secretary-General. I planned and led a conference for more than 450 participants, managing a team of 50 and coordinating with our school administration and 10 other schools.",
-      "I teach delegates how to research their assigned country, write position papers, and debate. I have also led our school’s delegation to conferences across Egypt.",
+      "As Secretary-General, I lead the student team preparing BISCMUN XIV. My work includes coordinating with participating schools and the school administration, organising delegation information, and following up on committee preparation.",
+      "The work already produced includes school-specific delegation forms, registration correspondence, and revised chair-report materials. The conference is scheduled for 3–5 December 2026; its final attendance and results will be recorded after it takes place.",
     ],
     period: "2025–present",
     categories: ["Leadership", "Community"],
+    outcomes: [
+      "Issued school-specific delegation forms and coordinated registration follow-up.",
+      "Coordinated chair-report revisions and committee preparation with the Secretariat.",
+      "Prepared opening-ceremony invitations for the 3–5 December 2026 conference.",
+    ],
   },
   {
     id: "engineering-club",
@@ -78,6 +84,10 @@ export const schoolActivities: Entry[] = [
       "Our proposed air-quality monitoring project starts with deciding what to measure and how to test a device. It is still a development project; the website’s concept images are not photographs of working hardware.",
     ],
     categories: ["Leadership", "Science & research", "Building"],
+    outcomes: [
+      "Co-founded a school club and recruited and mentored younger students.",
+      "Developed plans for an air-quality monitoring project; hardware testing remains ahead.",
+    ],
   },
   {
     id: "stem-club",
@@ -91,6 +101,10 @@ export const schoolActivities: Entry[] = [
       "I lead the school’s Science, Technology, Engineering and Mathematics (STEM) Club and organise STEM Week. My work includes olympiad preparation, science fairs, and coordinating workshops with teachers and external speakers.",
     ],
     categories: ["Leadership", "Science & research", "Community"],
+    outcomes: [
+      "Organised STEM Week activities, science fairs, and olympiad preparation.",
+      "Coordinated workshops with teachers and external speakers.",
+    ],
   },
 ];
 
@@ -103,12 +117,16 @@ export const activities: Entry[] = [
     period: "2025–present",
     href: "https://3alemny.app",
     summary:
-      "Co-founded an Egyptian-curriculum learning platform that reached 5,000+ users by September 2026.",
+      "Launched a bilingual Egyptian-curriculum study platform with tutoring, practice tools, and a student-feedback process.",
     paragraphs: [
-      "I co-founded 3alemny and lead its technical development. I work on the platform architecture, AI integration, database, and interface. Students can use an AI tutor, quizzes, flashcards, mock exams, and performance reports.",
-      "I built a network of teachers and alumni to review curriculum coverage and test features against the exams students actually sit. I also demonstrated the platform at sports clubs and youth centres and collected feedback. By September 2026, the platform had reached more than 5,000 users.",
+      "I co-founded 3alemny and lead its technical development, including the platform architecture, AI integration, database, and interface. The product brings study tools for the Egyptian curriculum into one web platform.",
+      "I demonstrated the platform at sports clubs and youth centres and worked with teachers and alumni on curriculum coverage and feature feedback. A feedback survey and product demo helped turn conversations into material we could use when revising the product.",
     ],
     categories: ["Building", "Leadership", "Community"],
+    outcomes: [
+      "Published a platform combining an AI tutor, quizzes, flashcards, mock exams, and progress reports.",
+      "Created product demonstrations and gathered feedback from students and teachers.",
+    ],
   },
   {
     id: "xedu",
@@ -123,20 +141,30 @@ export const activities: Entry[] = [
       "I work with Xedu as a partner and lead developer on its SAT preparation platform. My work includes adaptive practice examinations, drills, and progress tracking that helps tutors see where students need support.",
     ],
     categories: ["Building"],
+    outcomes: [
+      "Developed SAT practice and drill interfaces with a product partner.",
+      "Worked on progress tools intended to help tutors identify areas for further practice.",
+    ],
   },
   {
     id: "meta",
     name: "Meta",
     role: "AI policy intern",
     category: "Experience",
-    period: "July–August 2026",
+    period: "13 July–17 August 2026 · five weeks",
     summary:
-      "Researched youth AI use and cognitive offloading; presented findings to AI, ethics, and public-policy teams.",
+      "Produced literature reviews, policy notes, a peer-survey analysis, and a presentation on cognitive offloading; developed Anchor with a fellow intern.",
     paragraphs: [
-      "During my internship at Meta in London, I researched how AI affects young people’s learning, memory, critical thinking, and independent decision-making. I focused on cognitive offloading: relying on technology to remember or think through tasks.",
-      "I developed and presented findings to my supervisor and senior leaders across Meta’s AI, ethics, and public-policy teams. The work led me to begin Anchor, an app exploring how people can use AI while staying involved in their own thinking.",
+      "During a five-week placement with Meta’s Global Policy team, I worked with a fellow intern on research into young people’s use of AI. Our materials combined a literature review with an exploratory survey of 20 peers. The survey was a small, self-reported sample, not a representative study of young people.",
+      "I presented the work to my supervisor and policy professionals and revised it following feedback. The presentation compared stronger and weaker forms of evidence and proposed approaches such as requiring an initial attempt, offering hints, and keeping a teacher involved. The recommendations were part of our research presentation.",
+      "The practical output was Anchor, a prototype designed around cognitive practice and awareness of AI use. Building the platform did not establish that it improves cognition; that would require separate testing.",
     ],
     categories: ["Work experience", "Science & research"],
+    outcomes: [
+      "Written literature reviews and executive policy notes on youth AI use and cognitive offloading.",
+      "A collaborative peer survey and presentation translating the research into recommendations.",
+      "An Anchor prototype exploring ways to keep users actively thinking while using AI.",
+    ],
   },
   {
     id: "cooking",
@@ -145,12 +173,17 @@ export const activities: Entry[] = [
     category: "Creative practice",
     href: "https://www.instagram.com/zuki_cooks/",
     summary:
-      "Created dishes and food photography for Zuki Cooks, and demonstrated my cooking on El Hekaya with Amr Adib.",
+      "Produced original dishes, food photography, and a live cooking demonstration on El Hekaya with Amr Adib.",
     paragraphs: [
-      "I share original dishes, plating, and food photography through Zuki Cooks. By September 2026, the account had grown to more than 3,000 followers. I also demonstrated my cooking on El Hekaya, hosted by Amr Adib.",
-      "I have attended the international chefs’ meet at Cairo Food Week since 2023. Cooking also led me to build Zuki’s Chemistry Kitchen, where I explain the chemical processes behind familiar techniques.",
+      "Through Zuki Cooks, I create dishes and document the preparation and presentation through photography. I also demonstrated my cooking on El Hekaya, hosted by Amr Adib.",
+      "Professional kitchen work and visits to Cairo Food Week have added to this practice. Questions about temperature, texture, and technique led me to build Zuki’s Chemistry Kitchen.",
     ],
     categories: ["Creative practice", "Science & research"],
+    outcomes: [
+      "Published dishes, plating, and food photography through Zuki Cooks.",
+      "Demonstrated my cooking on El Hekaya with Amr Adib.",
+      "Turned questions from cooking into the Chemistry Kitchen website.",
+    ],
   },
   {
     id: "chemistry-kitchen",
@@ -165,6 +198,10 @@ export const activities: Entry[] = [
       "I created Zuki’s Chemistry Kitchen to explain what changes during cooking. I built the website and organised its explanations around ingredients, temperature, and technique, connecting observable results to the chemistry behind them.",
     ],
     categories: ["Building", "Science & research", "Creative practice"],
+    outcomes: [
+      "Published a website explaining food chemistry through familiar cooking techniques.",
+      "Connected ingredients and processing conditions with emulsification, protein denaturation, and the Maillard reaction.",
+    ],
   },
   {
     id: "karmsolar",
@@ -173,11 +210,16 @@ export const activities: Entry[] = [
     category: "Experience",
     period: "July 2025",
     summary:
-      "Supported technical and economic evaluation of utility-scale and hybrid solar photovoltaic projects.",
+      "Prepared and submitted a presentation explaining KarmSolar’s four business lines during my Technical Office placement.",
     paragraphs: [
-      "I worked in KarmSolar’s Technical Office for four weeks, supporting analysis of solar photovoltaic projects across multiple sites. I assisted with technical and economic evaluation and learned about grid integration and solar-project development workflows.",
+      "During my four-week KarmSolar placement, I prepared slides explaining the company’s four business lines and sent the presentation to my supervisor. This gave me a concrete task: turn unfamiliar energy-business material into an explanation someone else could follow.",
+      "Other assigned exercises involved comparing project performance and improvement, interpreting an income statement, and reviewing company materials. The placement combined business research with supervised analytical exercises.",
     ],
     categories: ["Work experience", "Science & research"],
+    outcomes: [
+      "Submitted a business-lines presentation to my supervisor in July 2025.",
+      "Explained generation, microgrids, geographical distribution, and urban distribution.",
+    ],
   },
   {
     id: "imperial",
@@ -192,6 +234,11 @@ export const activities: Entry[] = [
       "I used coding and computational modelling to explore chemical systems, took part in medicinal chemistry and Chemical Kitchen activities, and developed and presented a group solution in the interdisciplinary Innovation Challenge.",
     ],
     categories: ["Science & research"],
+    outcomes: [
+      "Synthesised dyes and used infrared spectroscopy to examine the products.",
+      "Built and controlled a LEGO spectrometer.",
+      "Developed and presented a group solution in an interdisciplinary Innovation Challenge.",
+    ],
   },
   {
     id: "dsamun",
@@ -213,11 +260,15 @@ export const activities: Entry[] = [
     category: "Experience",
     period: "Summers 2023–2025",
     summary:
-      "Worked in a commercial kitchen across three summers, assisting with preparation, plating, and organisation.",
+      "Prepared ingredients and plated dishes during busy service across three summers at Eatery.",
     paragraphs: [
       "I worked full-time in kitchen operations at Eatery on Egypt’s North Coast in August 2023, August 2024, and July 2025. During busy service periods, I assisted with food preparation, plating, and kitchen organisation while following hygiene and safety standards.",
     ],
     categories: ["Work experience", "Creative practice"],
+    outcomes: [
+      "Assisted with food preparation and plating during commercial service.",
+      "Maintained kitchen organisation, hygiene, and safe working practices across three summer placements.",
+    ],
   },
   {
     id: "piano",
@@ -232,6 +283,10 @@ export const activities: Entry[] = [
       "My practice includes learning repertoire, working through difficult passages, and deciding how to phrase and interpret a piece.",
     ],
     categories: ["Creative practice"],
+    outcomes: [
+      "Achieved Trinity College London Piano Grade 6.",
+      "Continuing repertoire practice towards Grade 8.",
+    ],
   },
   {
     id: "lumi",
@@ -245,6 +300,10 @@ export const activities: Entry[] = [
       "I created Lumi to explore visual maths and literacy activities for younger children. I developed the lesson interface and experimented with colour, navigation, and small visual rewards. It is an interface project; I have not measured its effect on learning outcomes.",
     ],
     categories: ["Building"],
+    outcomes: [
+      "Built a visual maths and literacy interface for younger children.",
+      "Explored lesson navigation and visual feedback; educational effectiveness has not been measured.",
+    ],
   },
   {
     id: "nano",
@@ -258,6 +317,9 @@ export const activities: Entry[] = [
       "I am developing Nano to explore running a language model on my own computer. The project involves configuring local inference and examining how available hardware affects response speed and memory requirements.",
     ],
     categories: ["Building"],
+    outcomes: [
+      "Developing a local language-model setup, with speed and memory trade-offs still being explored.",
+    ],
   },
   {
     id: "community",
@@ -270,6 +332,9 @@ export const activities: Entry[] = [
       "I volunteered in food packing for people experiencing homelessness in Egypt, helping prepare food for distribution as part of an organised group effort.",
     ],
     categories: ["Community"],
+    outcomes: [
+      "Prepared food packs as part of a group distribution effort for people experiencing homelessness in Egypt.",
+    ],
   },
   {
     id: "thimun",
@@ -296,6 +361,10 @@ export const activities: Entry[] = [
     paragraphs: [
       "I created a garden at home and grew more than 15 types of fruits, vegetables, herbs, and cacti. I make compost and fertiliser from household food scraps, and use pH tests and home lab kits to assess soil and adapt it for different plants.",
     ],
+    outcomes: [
+      "Established a home garden with more than 15 types of fruits, vegetables, herbs, and cacti.",
+      "Produced compost from household food scraps and used pH testing to guide soil preparation.",
+    ],
   },
   {
     id: "table-tennis",
@@ -315,15 +384,17 @@ export const activities: Entry[] = [
 export const research = [
   {
     id: "scg",
-    subject: "Independent research",
+    subject: "Published research · NHSJS · 21 October 2026",
     title: "A second life for coffee grounds.",
     code: "SCG",
     question:
       "How suitable are spent coffee grounds for heavy-metal remediation in water and soil?",
     method: "Systematic literature review",
-    text: "A review of adsorption mechanisms, preparation methods, and testing conditions, developed with guidance from Sabrina Hu, a PhD candidate at the University of Cambridge. The work examines dissolved-metal removal in water and reduced metal bioavailability in soil, alongside the limits of comparing results across studies.",
+    text: "Published in the National High School Journal of Science on 21 October 2026, this review synthesises 30 studies on spent coffee grounds and heavy-metal remediation. I separated five material categories and compared the mechanisms, preparation methods, and conditions behind reported results. The review identifies promising uses and gaps in long-term field evidence; it does not report a treatment system I built or tested. Sabrina Hu, a PhD candidate at the University of Cambridge, mentored the work.",
     formula: "surface → interaction → application",
     type: "surface",
+    outcome:
+      "A published review of 30 studies, with a comparison of five material categories and their practical limitations.",
   },
   {
     id: "maths-ia",

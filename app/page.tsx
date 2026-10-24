@@ -18,7 +18,7 @@ const destinations = [
     name: "Activities",
     line: "Outside the lines.",
     detail:
-      "3alemny, Model United Nations leadership, internships, cooking, music, and more.",
+      "Products, reports, conference preparation, creative work, and the contributions behind them.",
     count: `${allActivities.length} experiences`,
   },
   {

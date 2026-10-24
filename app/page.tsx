@@ -53,6 +53,15 @@ const destinations = [
     detail: "Professional experience at Meta and KarmSolar.",
     count: `${internships.length} internships`,
   },
+  {
+    href: "/music",
+    number: "07",
+    name: "Music",
+    line: "At the piano.",
+    detail:
+      "Listening, interpretation, and practice through the Trinity College London programme.",
+    count: "Piano · since 2017",
+  },
 ];
 
 export default function Home() {
@@ -99,7 +108,7 @@ export default function Home() {
         <div className="hero-baseline mono">
           <span>Choose a chapter ↓</span>
           <span>A work in curiosity, always.</span>
-          <span>01 — 06</span>
+          <span>01 — 07</span>
         </div>
       </section>
       <section

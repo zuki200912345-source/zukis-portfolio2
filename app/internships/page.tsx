@@ -29,7 +29,7 @@ export default function Page() {
       </section>
       <PageTurn
         previous={["/projects", "Independent Projects"]}
-        next={["/about", "About"]}
+        next={["/music", "Music"]}
       />
     </>
   );

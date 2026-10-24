@@ -296,10 +296,10 @@ export const research = [
 
 export const awards = [
   {
-    title: "Academic Endeavour Award",
-    organisation: "BISC · Chemistry HL",
-    result: "Recipient",
-    year: "2026",
+    title: "Senior Mathematical Challenge",
+    organisation: "UK Mathematics Trust",
+    result: "Gold",
+    year: "",
   },
   {
     title: "International Chemistry Quiz",
@@ -311,6 +311,12 @@ export const awards = [
     title: "Senior Physics Challenge",
     organisation: "British Physics Olympiad",
     result: "Silver",
+    year: "2026",
+  },
+  {
+    title: "Academic Endeavour Award",
+    organisation: "BISC · Chemistry HL",
+    result: "Recipient",
     year: "2026",
   },
   {

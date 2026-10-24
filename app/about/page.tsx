@@ -26,7 +26,7 @@ export default function Page() {
           </p>
         </div>
       </section>
-      <PageTurn previous={["/internships", "Internships"]} next={["/", "Home"]} />
+      <PageTurn previous={["/music", "Music"]} next={["/", "Home"]} />
     </>
   );
 }

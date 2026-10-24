@@ -17,6 +17,20 @@ const chapters = [
   { id: "awards", title: "Awards", subtitle: "Honours & milestones" },
 ];
 
+const navigationPages = [
+  ...chapters,
+  {
+    id: "projects",
+    title: "Independent Projects",
+    subtitle: "Websites, apps & games",
+  },
+  {
+    id: "internships",
+    title: "Internships",
+    subtitle: "Professional experience",
+  },
+];
+
 export function Navigation() {
   const pathname = usePathname();
   const router = useRouter();
@@ -24,7 +38,7 @@ export function Navigation() {
   const [motion, setMotion] = useState(true);
   const indexPages = [
     { id: "", title: "Home", subtitle: "A field of interests" },
-    ...chapters,
+    ...navigationPages,
     { id: "about", title: "About", subtitle: "The person behind the projects" },
   ];
 
@@ -32,7 +46,15 @@ export function Navigation() {
     const followLegacyLink = () => {
       if (pathname !== "/") return;
       const hash = window.location.hash.slice(1);
-      const pages = ["education", "activities", "research", "awards", "about"];
+      const pages = [
+        "education",
+        "activities",
+        "research",
+        "awards",
+        "projects",
+        "internships",
+        "about",
+      ];
       if (pages.includes(hash)) router.replace(`/${hash}`);
       else if (["maths-ia", "physics-ia", "chemistry-ia", "scg"].includes(hash))
         router.replace(`/research#${hash}`);
@@ -92,7 +114,7 @@ export function Navigation() {
           ae<span>d.</span>
         </Link>
         <nav aria-label="Main navigation">
-          {chapters.map((chapter, i) => (
+          {navigationPages.map((chapter, i) => (
             <Link
               key={chapter.id}
               href={`/${chapter.id}`}
@@ -336,9 +358,11 @@ function ActivityEntry({
 export function ActivityIndex({
   entries,
   variant,
+  label = "activities",
 }: {
   entries: Entry[];
   variant?: "school";
+  label?: string;
 }) {
   const [filter, setFilter] = useState("All");
   const [openAll, setOpenAll] = useState(false);
@@ -358,7 +382,7 @@ export function ActivityIndex({
             School activities / {entries.length} entries
           </span>
         ) : (
-          <div className="filters" aria-label="Filter activities">
+          <div className="filters" aria-label={`Filter ${label}`}>
             {categories.map((category) => (
               <button
                 key={category}
@@ -387,7 +411,7 @@ export function ActivityIndex({
         </button>
       </div>
       <p className="visually-hidden" role="status">
-        {filtered.length} activities shown
+        {filtered.length} {label} shown
       </p>
       {filtered.map((entry) => (
         <ActivityEntry

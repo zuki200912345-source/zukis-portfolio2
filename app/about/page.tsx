@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Chapter, PageTurn } from "../site-shell";
+import { PageTurn } from "../site-shell";
 
 export const metadata: Metadata = { title: "About" };
 
@@ -26,7 +26,7 @@ export default function Page() {
           </p>
         </div>
       </section>
-      <PageTurn previous={["/awards", "Awards"]} next={["/", "Home"]} />
+      <PageTurn previous={["/internships", "Internships"]} next={["/", "Home"]} />
     </>
   );
 }

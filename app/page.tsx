@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { projects, internships } from "./project-content";
 import { Atlas } from "./portfolio-ui";
 import { activities, research, awards } from "./content";
 
@@ -35,6 +36,22 @@ const destinations = [
     line: "A few milestones.",
     detail: "Recognition in chemistry, physics, mathematics, and STEM.",
     count: `${awards.length} honours`,
+  },
+  {
+    href: "/projects",
+    number: "05",
+    name: "Independent Projects",
+    line: "Things I build.",
+    detail: "Websites, apps, games, and independent experiments.",
+    count: `${projects.length} projects`,
+  },
+  {
+    href: "/internships",
+    number: "06",
+    name: "Internships",
+    line: "Learning through work.",
+    detail: "Professional experience at Meta and KarmSolar.",
+    count: `${internships.length} internships`,
   },
 ];
 
@@ -82,7 +99,7 @@ export default function Home() {
         <div className="hero-baseline mono">
           <span>Choose a chapter ↓</span>
           <span>A work in curiosity, always.</span>
-          <span>01 — 04</span>
+          <span>01 — 06</span>
         </div>
       </section>
       <section

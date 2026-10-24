@@ -2854,3 +2854,30 @@ footer {
   font: inherit;
   margin: 0;
 }
+
+/* Additions use the existing palette and typography. */
+.publication-link {
+  display: inline-block;
+  color: var(--accent);
+  border-bottom: 1px solid currentColor;
+  padding: 10px 0;
+  margin: 0 0 20px;
+  line-height: 1.8;
+}
+.index-dialog { overflow-y: auto; }
+.index-dialog .dialog-links > a > span:nth-child(2) { min-width: 0; overflow-wrap: anywhere; }
+@media (min-width: 581px) and (max-width: 1100px) {
+  .site-header nav { gap: 12px; }
+  .site-header nav a { font-size: 10px; }
+  .site-header .nav-number { display: none; }
+}
+@media (max-width: 580px) {
+  #projects .section-heading h1 { font-size: clamp(38px, 10vw, 58px); }
+  .index-dialog .dialog-links > a[href="/projects"] > span:nth-child(2) { font-size: 32px; }
+}
+
+@media (max-width: 580px) {
+  #projects .section-heading, #internships .section-heading { flex-direction: column; align-items: flex-start; gap: 24px; }
+  #internships .section-heading h1 { font-size: clamp(38px, 10vw, 58px); }
+  #projects .heading-note, #internships .heading-note { width: auto; max-width: 100%; }
+}

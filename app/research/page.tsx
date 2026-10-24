@@ -44,6 +44,16 @@ export default function Page() {
               <div className="research-copy">
                 <p className="mono research-meta">{item.subject}</p>
                 <h2>{item.title}</h2>
+                {item.id === "scg" ? (
+                  <a
+                    className="publication-link mono"
+                    href="https://nhsjs.com/2026/how-suitable-are-spent-coffee-grounds-for-heavy-metal-remediation-in-water-and-soil-a-systematic-review-of-mechanisms-conditions-and-practical-viability/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Read the published article · NHSJS ↗
+                  </a>
+                ) : null}
                 <div className="question">
                   <span className="mono">The question</span>
                   <p>{item.question}</p>

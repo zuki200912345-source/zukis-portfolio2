@@ -245,18 +245,6 @@ export const activities: Entry[] = [
 
 export const research = [
   {
-    id: "maths-ia",
-    subject: "Mathematics · Internal assessment",
-    title: "A steak, a cross-section, a heat equation.",
-    code: "MTH",
-    question:
-      "How can the one-dimensional heat equation be used to model heat transfer through a steak as it cooks?",
-    method: "Mathematical modelling · one-dimensional heat equation",
-    text: "An exploration of cooking through a one-dimensional mathematical model of heat transfer. The central idea is to describe how temperature varies with position and time inside a steak, connecting a familiar kitchen process with partial differential equations.",
-    formula: "∂T/∂t = α ∂²T/∂x²",
-    type: "heat",
-  },
-  {
     id: "scg",
     subject: "Independent research",
     title: "A second life for coffee grounds.",
@@ -267,6 +255,18 @@ export const research = [
     text: "A review of adsorption mechanisms, preparation methods, and testing conditions, developed with guidance from Sabrina Hu, a PhD candidate at the University of Cambridge. The work examines dissolved-metal removal in water and reduced metal bioavailability in soil, alongside the limits of comparing results across studies.",
     formula: "surface → interaction → application",
     type: "surface",
+  },
+  {
+    id: "maths-ia",
+    subject: "Mathematics · Internal assessment",
+    title: "A steak, a cross-section, a heat equation.",
+    code: "MTH",
+    question:
+      "How can the one-dimensional heat equation be used to model heat transfer through a steak as it cooks?",
+    method: "Mathematical modelling · one-dimensional heat equation",
+    text: "An exploration of cooking through a one-dimensional mathematical model of heat transfer. The central idea is to describe how temperature varies with position and time inside a steak, connecting a familiar kitchen process with partial differential equations.",
+    formula: "∂T/∂t = α ∂²T/∂x²",
+    type: "heat",
   },
   {
     id: "physics-ia",

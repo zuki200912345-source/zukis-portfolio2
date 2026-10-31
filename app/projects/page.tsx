@@ -45,6 +45,28 @@ export default function Page() {
               <figcaption className="mono">Sharing the work in person</figcaption>
             </figure>
           </div>
+          <figure className="school-gallery-video">
+            <video controls preload="metadata" poster="/gallery/3alemny-presentation-stage.jpg" aria-label="Video of Abdallah presenting at a school">
+              <source src="/gallery/school-presentation.mp4" type="video/mp4" />
+              Your browser does not support video playback.
+            </video>
+            <figcaption className="mono">A moment from the presentation</figcaption>
+          </figure>
+          <div className="school-gallery-community">
+            <div className="school-gallery-heading">
+              <div>
+                <p className="mono">3alemny · community</p>
+                <h3>Meeting students <em>along the way.</em></h3>
+              </div>
+              <p>Sharing 3alemny with students and introducing the platform in person.</p>
+            </div>
+            <div className="school-gallery-community-grid">
+              <figure><img src="/gallery/3alemny-community-1.jpg" alt="Two people holding 3alemny brochures on a football pitch" loading="lazy" /></figure>
+              <figure><img src="/gallery/3alemny-community-2.jpg" alt="Two students holding 3alemny brochures on a football pitch" loading="lazy" /></figure>
+              <figure><img src="/gallery/3alemny-community-3.jpg" alt="Two students holding 3alemny brochures outdoors" loading="lazy" /></figure>
+              <figure><img src="/gallery/3alemny-community-4.jpg" alt="Two students holding 3alemny brochures on a football pitch" loading="lazy" /></figure>
+            </div>
+          </div>
         </section>
       </section>
       <PageTurn

@@ -2889,17 +2889,26 @@ footer {
 .school-gallery-link { display: inline-block; margin: 0 0 28px; text-decoration: underline; text-underline-offset: 4px; }
 .school-gallery { margin: 110px 0 30px; border-top: 1px solid currentColor; padding-top: 28px; }
 .school-gallery-heading { display: flex; justify-content: space-between; align-items: end; gap: 32px; margin-bottom: 32px; }
-.school-gallery-heading h2 { font-family: Instrument, Georgia, serif; font-size: clamp(38px, 5vw, 70px); font-weight: 400; line-height: 1; margin: 16px 0 0; }
+.school-gallery-heading h2, .school-gallery-heading h3 { font-family: Instrument, Georgia, serif; font-size: clamp(38px, 5vw, 70px); font-weight: 400; line-height: 1; margin: 16px 0 0; }
 .school-gallery-heading > p { max-width: 300px; line-height: 1.6; margin: 0; }
 .school-gallery-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 .school-gallery-grid figure { margin: 0; }
 .school-gallery-grid img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
 .school-gallery-grid figcaption { padding-top: 10px; }
+.school-gallery-video { margin: 32px 0 0; max-width: 850px; }
+.school-gallery-video video { display: block; width: 100%; background: #101713; }
+.school-gallery-video figcaption { padding-top: 10px; }
+.school-gallery-community { margin-top: 90px; }
+.school-gallery-community-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.school-gallery-community-grid figure { margin: 0; }
+.school-gallery-community-grid img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; }
 @media (max-width: 680px) {
   .school-gallery { margin-top: 75px; }
   .school-gallery-heading { display: block; }
   .school-gallery-heading > p { margin-top: 20px; }
   .school-gallery-grid { grid-template-columns: 1fr; }
+  .school-gallery-community { margin-top: 65px; }
+  .school-gallery-community-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 }
 .activity-search { display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; max-width: 520px; }
 .activity-search label { font-size: 12px; }

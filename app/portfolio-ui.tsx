@@ -30,6 +30,7 @@ const navigationPages = [
     subtitle: "Professional experience",
   },
   { id: "music", title: "Music", subtitle: "Piano & creative practice" },
+  { id: "gallery", title: "Gallery", subtitle: "Photos & video" },
 ];
 
 export function Navigation() {
@@ -55,6 +56,7 @@ export function Navigation() {
         "projects",
         "internships",
         "music",
+        "gallery",
         "about",
       ];
       if (pages.includes(hash)) router.replace(`/${hash}`);

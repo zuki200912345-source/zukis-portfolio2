@@ -63,6 +63,14 @@ const destinations = [
       "Listening, interpretation, and practice through the Trinity College London programme.",
     count: "Piano · since age six",
   },
+  {
+    href: "/gallery",
+    number: "08",
+    name: "Gallery",
+    line: "Out in the world.",
+    detail: "School presentations, the 3alemny team, and our community.",
+    count: "Photos & video",
+  },
 ];
 
 export default function Home() {
@@ -82,6 +90,7 @@ export default function Home() {
               ✳
             </span>
           </h1>
+          <Link href="/gallery" className="hero-gallery-mobile">Go to my gallery <span aria-hidden="true">↗</span></Link>
         </div>
         <Atlas />
         <div className="hero-bottom">
@@ -100,16 +109,12 @@ export default function Home() {
             </span>
             <span aria-hidden="true">↘</span>
           </Link>
-          <p className="hero-note mono">
-            Science. Software.
-            <br />A piano. A kitchen.
-            <br />A few connections.
-          </p>
+          <div className="hero-gallery"><Link href="/gallery" className="hero-gallery-link">Go to my gallery <span aria-hidden="true">↗</span></Link><p className="hero-note mono">Science. Software. A piano. A kitchen.</p></div>
         </div>
         <div className="hero-baseline mono">
           <span>Choose a chapter ↓</span>
           <span>Research, projects & life beyond school.</span>
-          <span>01 — 07</span>
+          <span>01 — 08</span>
         </div>
       </section>
       <section

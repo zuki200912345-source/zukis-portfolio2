@@ -5,26 +5,33 @@ import { useRef, useState } from "react";
 type Photo = { src: string; alt: string; caption: string };
 type Group = { id: string; label: string; title: string; intro: string; photos: Photo[] };
 
-const presentation: Photo[] = [
-  { src: "/gallery/3alemny-school-presentation.jpg", alt: "Abdallah at the lectern during a school presentation", caption: "School presentation · 01" },
-  { src: "/gallery/3alemny-presentation-stage.jpg", alt: "Abdallah presenting on a school stage", caption: "School presentation · 02" },
-];
-const founders: Photo[] = [
-  { src: "/gallery/full/founders-approved.jpg", alt: "The three 3alemny founders at their booth", caption: "The 3alemny founders" },
-];
-const communityNumbers = [15, 16, 17, 18, 22, 23, 25, 27];
+const presentation: Photo[] = [1, 2, 4, 5, 7, 8, 12].map((n, i) => ({
+  src: `/gallery/full/photo-${String(n).padStart(2, "0")}.jpg`,
+  alt: ["Abdallah presenting beside a screen", "Abdallah at the lectern during a school presentation", "Abdallah presenting on a school stage", "Abdallah presenting to students seated in a school hall", "Students seated for a school presentation", "Students watching a school presentation", "Abdallah presenting to a school audience"][i],
+  caption: `School presentation · ${String(i + 1).padStart(2, "0")}`,
+}));
+const founders: Photo[] = Array.from({ length: 19 }, (_, i) => ({
+  src: `/gallery/full/founders-${6861 + i}.jpg`,
+  alt: "The 3alemny founders at their booth",
+  caption: `The 3alemny founders · ${String(i + 1).padStart(2, "0")}`,
+}));
 const communityDescriptions = [
   "Two people holding 3alemny brochures on a football pitch",
   "Two students holding 3alemny brochures on a football pitch",
   "A person holding a 3alemny brochure outdoors",
   "Two students holding 3alemny brochures on a football pitch",
+  "Two people holding a 3alemny brochure at night",
+  "A collage of people holding 3alemny brochures on a football pitch",
+  "A collage of children holding 3alemny brochures",
   "A student holding a 3alemny brochure outdoors",
   "Two students holding 3alemny brochures outdoors",
+  "A group holding 3alemny brochures on a football pitch",
   "Two students holding 3alemny brochures on a football pitch",
+  "A person holding a 3alemny brochure outdoors at night",
   "Two students holding 3alemny brochures outdoors",
 ];
-const community: Photo[] = communityNumbers.map((number, i) => ({
-  src: `/gallery/full/photo-${String(number).padStart(2, "0")}.jpg`,
+const community: Photo[] = Array.from({ length: 13 }, (_, i) => ({
+  src: `/gallery/full/photo-${String(i + 15).padStart(2, "0")}.jpg`,
   alt: communityDescriptions[i],
   caption: `3alemny community · ${String(i + 1).padStart(2, "0")}`,
 }));
